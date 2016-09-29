@@ -534,7 +534,7 @@ class MiniExiftool
     end
   else
     def escape val
-      '"' << val.to_s.gsub(/([\\"$])/, "\\\\\\1") << '"'
+      '"' << val.to_s.gsub(/([\\"$\`])/, "\\\\\\1") << '"'
     end
   end
 
